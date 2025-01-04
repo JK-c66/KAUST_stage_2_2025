@@ -88,39 +88,3 @@ Notebooks and labs for KAUST stage 2 2025
     </td>
   </tr>
 </table>
-
-<style>
-table {
-    border-collapse: collapse;
-    width: 100%;
-    background-color: #f8f9fa;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-}
-
-td {
-    padding: 8px;
-    border: 1px solid #ddd;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-a {
-    color: #0366d6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-</style>
