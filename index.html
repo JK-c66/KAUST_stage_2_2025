@@ -6,12 +6,18 @@
     <title>KAUST Stage 2 2025</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="simple-header">
-        <h1>KAUST stage 2 2025</h1>
-        <p>Materials for Intro to AI 2025 </p>
+        <div class="header-text">
+            <h1>KAUST stage 2 2025</h1>
+            <p>Materials for Intro to AI 2025</p>
+        </div>
+        <button id="downloadAll" class="download-button">
+            <i class="fas fa-download"></i> Download All Materials
+        </button>
     </div>
     <h2>Course Content</h2>
     <table class="course-table">
@@ -80,5 +86,74 @@
         </tbody>
     </table>
 </div>
+
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    try {
+        // Show loading state
+        const button = document.getElementById('downloadAll');
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing Download...';
+        button.disabled = true;
+
+        // List of files to download
+        const files = [
+            // Lectures
+            'Lectures/Day 1.pdf',
+            'Lectures/Day 2.pdf',
+            'Lectures/Day 3.pdf',
+            'Lectures/Day 4.pdf',
+            // Labs
+            'Labs/day1_Linear_Regression_Basics.ipynb',
+            'Labs/day1_Lab_Linear_Regression_Advanced.ipynb',
+            'Labs/day2_Logistic_Regression_Basics.ipynb',
+            'Labs/day2_Lab_Classification_Advanced.ipynb',
+            'Labs/day3_NN_Numpy_MNIST.ipynb',
+            'Labs/day3_NN_Pytorch_MNIST.ipynb',
+            'Labs/day4_DCT_Compression_Numpy.ipynb',
+            'Labs/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb',
+            'Labs/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb'
+        ];
+
+        // Create a JSZip instance
+        const JSZip = window.JSZip;
+        const zip = new JSZip();
+
+        // Download each file
+        const baseUrl = 'https://raw.githubusercontent.com/JK-c66/KAUST_stage_2_2025/main/';
+        for (const file of files) {
+            try {
+                const response = await fetch(baseUrl + file);
+                if (response.ok) {
+                    const blob = await response.blob();
+                    zip.file(file, blob);
+                }
+            } catch (error) {
+                console.warn(`Failed to download ${file}:`, error);
+            }
+        }
+
+        // Generate and download zip
+        const content = await zip.generateAsync({type: 'blob'});
+        const url = window.URL.createObjectURL(content);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'KAUST_materials.zip';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+
+        // Restore button state
+        button.innerHTML = originalText;
+        button.disabled = false;
+    } catch (error) {
+        console.error('Download failed:', error);
+        alert('Download failed. Please try again later.');
+        button.innerHTML = originalText;
+        button.disabled = false;
+    }
+});
+</script>
 </body>
 </html>

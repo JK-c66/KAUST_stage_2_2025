@@ -14,9 +14,28 @@
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 body {background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; transition: background-color 0.3s, color 0.3s;}
 .container {max-width: 1200px; margin: 1rem auto; padding: 0 20px;}
-.simple-header {margin-bottom: 2rem; text-align: center; padding-bottom: 1.5rem; border-bottom: 2px solid var(--border-color);}
-.simple-header h1 {font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-color); font-weight: 700;}
-.simple-header p {color: var(--text-color); opacity: 0.9; font-size: 1rem;}
+.simple-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text {
+    text-align: left;
+}
+.simple-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.simple-header p {
+    color: var(--text-color);
+    opacity: 0.9;
+    font-size: 1rem;
+}
 h2 {margin: 2rem 0 1rem; color: var(--text-color); font-size: 1.5rem; font-weight: 700; position: relative; padding-bottom: 0.5rem;}
 h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: var(--text-color); border-radius: 2px;}
 .course-table {width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px var(--card-shadow); margin-bottom: 1.5rem;}
@@ -49,6 +68,33 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
     .container {padding: 0 1rem; margin: 1rem auto;}
     .course-table {display: block; overflow-x: auto;}
     .course-table th, .course-table td {padding: 0.5rem; font-size: 0.9rem;}
-    .simple-header h1 {font-size: 1.5rem;}
-    .simple-header p {font-size: 0.9rem;}
+    .simple-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .download-button {
+        margin: 0;
+    }
+}
+.download-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover {
+    background-color: #27ae60;
+}
+.download-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+.download-button i {
+    margin-right: 8px;
 }
