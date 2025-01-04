@@ -1,6 +1,6 @@
 # KAUST_stage_2_2025
 
-Notebooks and labs for KAUST stage 2 2025
+Materials for KAUST stage 2 2025
 
 ## Course Content
 

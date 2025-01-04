@@ -1,0 +1,54 @@
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --hover-color: #1d4ed8;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --border-color: #e2e8f0;
+    --table-header-bg: #f1f5f9;
+    --table-row-hover: #f8fafc;
+    --table-border: #cbd5e1;
+}
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; transition: background-color 0.3s, color 0.3s;}
+.container {max-width: 1200px; margin: 1rem auto; padding: 0 20px;}
+.simple-header {margin-bottom: 2rem; text-align: center; padding-bottom: 1.5rem; border-bottom: 2px solid var(--border-color);}
+.simple-header h1 {font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-color); font-weight: 700;}
+.simple-header p {color: var(--text-color); opacity: 0.9; font-size: 1rem;}
+h2 {margin: 2rem 0 1rem; color: var(--text-color); font-size: 1.5rem; font-weight: 700; position: relative; padding-bottom: 0.5rem;}
+h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: var(--text-color); border-radius: 2px;}
+.course-table {width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px var(--card-shadow); margin-bottom: 1.5rem;}
+.course-table th {background: var(--table-header-bg); padding: 0.6rem 0.7rem; font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color);}
+.course-table td {padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--border-color); font-size: 0.95rem;}
+.course-table tr:last-child td {border-bottom: none;}
+.course-table tr:hover {background: var(--table-row-hover); transition: background-color 0.2s ease;}
+.lab-links, .colab-links {display: flex; flex-direction: column; gap: 0.5rem;}
+.lab-links a {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; transition: all 0.2s ease; padding: 0.4rem 0;}
+.lab-links a::before {content: '\f019'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 0.8em;}
+.pdf-link {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; font-size: 0.95rem;}
+.pdf-link i {color: #dc2626;}
+.colab-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+.colab-button img {
+    width: auto;
+    height: 24px;
+    object-fit: contain;
+}
+.colab-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px var(--card-shadow);}
+.coming-soon {color: var(--text-color); opacity: 0.6; font-style: italic; font-size: 0.9rem; font-weight: 500;}
+@media (max-width: 768px) {
+    .container {padding: 0 1rem; margin: 1rem auto;}
+    .course-table {display: block; overflow-x: auto;}
+    .course-table th, .course-table td {padding: 0.5rem; font-size: 0.9rem;}
+    .simple-header h1 {font-size: 1.5rem;}
+    .simple-header p {font-size: 0.9rem;}
+}
