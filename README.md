@@ -24,8 +24,8 @@ Materials for KAUST stage 2 2025
       <a href="day1_Lab_Linear_Regression_Advanced.ipynb">Linear Regression Advanced</a>
     </td>
     <td align="center">
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Linear_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Lab_Linear_Regression_Advanced.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day1_Linear_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day1_Lab_Linear_Regression_Advanced.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
     </td>
     <td align="center">
       Coming soon
@@ -42,8 +42,8 @@ Materials for KAUST stage 2 2025
       <a href="day2_Lab_Classification_Advanced.ipynb">Classification Advanced</a>
     </td>
     <td align="center">
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day2_Logistic_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day2_Lab_Classification_Advanced.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day2_Logistic_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day2_Lab_Classification_Advanced.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
     </td>
     <td align="center">
       Coming soon
@@ -60,8 +60,8 @@ Materials for KAUST stage 2 2025
       <a href="day3_NN_Pytorch_MNIST.ipynb">Neural Networks with PyTorch</a>
     </td>
     <td align="center">
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day3_NN_Numpy_MNIST.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day3_NN_Pytorch_MNIST.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day3_NN_Numpy_MNIST.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day3_NN_Pytorch_MNIST.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
     </td>
     <td align="center">
       Coming soon
@@ -79,9 +79,9 @@ Materials for KAUST stage 2 2025
       <a href="day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb">AutoEncoders</a>
     </td>
     <td align="center">
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day4_DCT_Compression_Numpy.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_DCT_Compression_Numpy.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
     </td>
     <td align="center">
       Coming soon
