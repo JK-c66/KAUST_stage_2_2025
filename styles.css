@@ -12,11 +12,11 @@
     --table-border: #cbd5e1;
 }
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-body {background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; transition: background-color 0.3s, color 0.3s;}
-.container {max-width: 1200px; margin: 1rem auto; padding: 0 20px;}
+body {background-color: var(--bg-color); color: var(--text-color); line-height: 1.5; transition: background-color 0.3s, color 0.3s;}
+.container {max-width: 1200px; margin: 0.75rem auto; padding: 0 15px;}
 .simple-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--border-color);
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ body {background-color: var(--bg-color); color: var(--text-color); line-height: 
 }
 .simple-header h1 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     color: var(--text-color);
     font-weight: 700;
 }
@@ -36,15 +36,15 @@ body {background-color: var(--bg-color); color: var(--text-color); line-height: 
     opacity: 0.9;
     font-size: 1rem;
 }
-h2 {margin: 2rem 0 1rem; color: var(--text-color); font-size: 1.5rem; font-weight: 700; position: relative; padding-bottom: 0.5rem;}
+h2 {margin: 1.25rem 0 0.75rem; color: var(--text-color); font-size: 1.4rem; font-weight: 700; position: relative; padding-bottom: 0.35rem;}
 h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: var(--text-color); border-radius: 2px;}
 .course-table {width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px var(--card-shadow); margin-bottom: 1.5rem;}
-.course-table th {background: var(--table-header-bg); padding: 0.6rem 0.7rem; font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color);}
-.course-table td {padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--border-color); font-size: 0.95rem;}
+.course-table th {background: var(--table-header-bg); padding: 0.5rem 0.75rem; font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color);}
+.course-table td {padding: 0.4rem 0.75rem; border-bottom: 1px solid var(--border-color); font-size: 1rem;}
 .course-table tr:last-child td {border-bottom: none;}
 .course-table tr:hover {background: var(--table-row-hover); transition: background-color 0.2s ease;}
-.lab-links, .colab-links {display: flex; flex-direction: column; gap: 0.5rem;}
-.lab-links a {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; transition: all 0.2s ease; padding: 0.4rem 0;}
+.lab-links, .colab-links, .solution-links {display: flex; flex-direction: column; gap: 0.35rem;}
+.lab-links a {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; transition: all 0.2s ease; padding: 0.25rem 0;}
 .lab-links a::before {content: '\f019'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 0.8em;}
 .pdf-link {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; font-size: 0.95rem;}
 .pdf-link i {color: #dc2626;}
@@ -63,7 +63,14 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
     object-fit: contain;
 }
 .colab-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px var(--card-shadow);}
-.coming-soon {color: var(--text-color); opacity: 0.6; font-style: italic; font-size: 0.9rem; font-weight: 500;}
+.coming-soon {
+    color: var(--text-color);
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.25rem 0;
+}
 @media (max-width: 768px) {
     .container {padding: 0 1rem; margin: 1rem auto;}
     .course-table {display: block; overflow-x: auto;}
@@ -84,8 +91,8 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin: 20px 0;
+    font-size: 15px;
+    margin: 12px 0;
     transition: background-color 0.3s ease;
 }
 .download-button:hover {
@@ -97,4 +104,27 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
 }
 .download-button i {
     margin-right: 8px;
+}
+
+/* Spinner animation */
+.fa-spin {
+    animation: fa-spin 1s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Lab separator styling */
+.lab-separator {
+    border: 0;
+    height: 1px;
+    background-color: var(--table-border);
+    margin: 6px 0;
+    width: 100%;
 }
