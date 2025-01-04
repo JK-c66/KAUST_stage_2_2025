@@ -30,14 +30,14 @@
                 <td>Linear Regression</td>
                 <td><a href="Lectures/Day 1.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Linear Regression Lecture</a></td>
                 <td><div class="lab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day1_Linear_Regression_Basics.ipynb" target="_blank">Linear Regression Basics</a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day1_Lab_Linear_Regression_Advanced.ipynb" target="_blank">Linear Regression Advanced</a>
                 </div></td>
                 <td><div class="colab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day1_Linear_Regression_Basics.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day1_Lab_Linear_Regression_Advanced.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                 </div></td>
                 <td><div class="solution-links">
                     <p class="coming-soon">Coming soon...</p>
@@ -50,14 +50,14 @@
                 <td>Classification</td>
                 <td><a href="Lectures/Day 2.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Classification Lecture</a></td>
                 <td><div class="lab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day2_Logistic_Regression_Basics.ipynb">Logistic Regression Basics</a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day2_Lab_Classification_Advanced.ipynb">Classification Advanced</a>
                 </div></td>
                 <td><div class="colab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day2_Logistic_Regression_Basics.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day2_Lab_Classification_Advanced.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                 </div></td>
                 <td><div class="solution-links">
                     <p class="coming-soon">Coming soon...</p>
@@ -70,14 +70,14 @@
                 <td>Neural Networks</td>
                 <td><a href="Lectures/Day 3.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Neural Networks Lecture</a></td>
                 <td><div class="lab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day3_NN_Numpy_MNIST.ipynb">Neural Networks (NumPy)</a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day3_NN_Pytorch_MNIST.ipynb">Neural Networks (PyTorch)</a>
                 </div></td>
                 <td><div class="colab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day3_NN_Numpy_MNIST.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day3_NN_Pytorch_MNIST.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                 </div></td>
                 <td><div class="solution-links">
                     <p class="coming-soon">Coming soon...</p>
@@ -90,18 +90,18 @@
                 <td>Advanced Topics</td>
                 <td><a href="Lectures/Day 4.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Advanced Topics Lecture</a></td>
                 <td><div class="lab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day4_DCT_Compression_Numpy.ipynb">DCT Compression</a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb">Logistic Regression (PyTorch)</a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="Labs/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb">AutoEncoders</a>
                 </div></td>
                 <td><div class="colab-links">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_DCT_Compression_Numpy.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                     <hr class="lab-separator">
-                    <p class="coming-soon">Coming soon...</p>
+                    <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/Labs/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb" class="colab-button" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a>
                 </div></td>
                 <td><div class="solution-links">
                     <p class="coming-soon">Coming soon...</p>
@@ -124,13 +124,23 @@ document.getElementById('downloadAll').addEventListener('click', async () => {
         button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing Download...';
         button.disabled = true;
 
-        // List of files to download 
+        // List of files to download
         const files = [
             // Lectures
             'Lectures/Day 1.pdf',
             'Lectures/Day 2.pdf',
             'Lectures/Day 3.pdf',
-            'Lectures/Day 4.pdf'
+            'Lectures/Day 4.pdf',
+            // Labs
+            'Labs/day1_Linear_Regression_Basics.ipynb',
+            'Labs/day1_Lab_Linear_Regression_Advanced.ipynb',
+            'Labs/day2_Logistic_Regression_Basics.ipynb',
+            'Labs/day2_Lab_Classification_Advanced.ipynb',
+            'Labs/day3_NN_Numpy_MNIST.ipynb',
+            'Labs/day3_NN_Pytorch_MNIST.ipynb',
+            'Labs/day4_DCT_Compression_Numpy.ipynb',
+            'Labs/day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb',
+            'Labs/day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb'
         ];
 
         // Create a JSZip instance
