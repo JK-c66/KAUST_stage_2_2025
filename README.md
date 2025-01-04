@@ -1,58 +1,58 @@
 # KAUST_stage_2_2025
 
-
-# KAUST AI Summer School 2024
-
-This AI Summer School offers an intensive 6-week program designed to provide participants with a thorough understanding
-of the latest advancements in AI and ML. Led by AI researchers and scientists, the summer school aims to equip attendees
-with essential knowledge to develop impactful AI solutions and establish a solid groundwork for pioneering research.
-
-The program features a blend of lectures, and interactive sessions, ensuring a dynamic and immersive learning
-experience. Upon completion, participants will work on AI projects and explore research concepts under the mentorship of
-experts from academia.
-
-## Week 1 - Advanced Computer Vision
+Notebooks and labs for KAUST stage 2 2025
+## Course Content
 
 <table>
   <tr>
-    <th></th>
-    <th><b>Lectures</b></th>
-    <th colspan="2"><b>Labs</b></th>
+    <th><b>Day</b></th>
+    <th><b>Topics</b></th>
+    <th><b>Labs</b></th>
     <th><b>Solutions</b></th>
   </tr>
   <tr>
-    <td>RNNs</td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Slides/1_RNNs.pdf">Slides</a></td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab1_Exercise.ipynb">Lab 1</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab1_Exercise.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab1_Solved.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
+    <td>Day 1</td>
+    <td>Linear Regression</td>
+    <td align="center">
+      <a href="day1_Linear_Regression_Basics.ipynb">Linear Regression Basics</a><br>
+      <a href="day1_Lab_Linear_Regression_Advanced.ipynb">Linear Regression Advanced</a>
+    </td>
+    <td align="center">
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Linear_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+    </td>
   </tr>
   <tr>
-    <td>Attention</td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Slides/2_Attention_ViT.pdf">Slides</a></td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/DFAN%20Exercise.ipynb">Lab 2</a> <br> <a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/MHSA.ipynb">Lab 3</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/DFAN%20Exercise.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a> <br> <a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/MHSA.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/DFAN%20Solution.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
+    <td>Day 2</td>
+    <td>Classification</td>
+    <td align="center">
+      <a href="day2_Logistic_Regression_Basics.ipynb">Logistic Regression Basics</a><br>
+      <a href="day2_Lab_Classification_Advanced.ipynb">Classification Advanced</a>
+    </td>
+    <td align="center">
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day2_Logistic_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+    </td>
   </tr>
   <tr>
-    <td>Video Classification</td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Slides/3_Video%20Classification.pdf">Slides</a></td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Video_classification_Exercises.ipynb">Lab 4</a></td>
-    <td align="center"><a href="https://colab.research.google.com/drive/1ht8h-bzvAU7wDSlKAbrwW1SGrzygB1r9#scrollTo=_Ih_df2q0kw4"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-    <td align="center"><a href="https://colab.research.google.com/drive/12rPSXtchX1Do07uEO2X8nkRtdR9dwk3d#scrollTo=_bROfh_K-Wxs"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
+    <td>Day 3</td>
+    <td>Neural Networks</td>
+    <td align="center">
+      <a href="day3_NN_Numpy_MNIST.ipynb">Neural Networks with NumPy</a><br>
+      <a href="day3_NN_Pytorch_MNIST.ipynb">Neural Networks with PyTorch</a>
+    </td>
+    <td align="center">
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day3_NN_Numpy_MNIST.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+    </td>
   </tr>
   <tr>
-    <td>VAEs</td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Slides/4_GenerativeAI_VAEs.pdf">Slides</a></td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab4.ipynb">Lab 5</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/Lab4_Soln.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-  </tr>
-  <tr>
-    <td>GANs</td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Slides/5_Generative%20AI_GANs_CLIP.pdf">Slides</a></td>
-    <td align="center"><a href="https://github.com/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/GANs%20Exercise.ipynb">Lab 6</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/GANs%20Exercise.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%201%20-%20Advanced%20Computer%20Vision/Labs/GANs%20Solution.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a></td>
+    <td>Day 4</td>
+    <td>Advanced Topics</td>
+    <td align="center">
+      <a href="day4_DCT_Compression_Numpy.ipynb">DCT Compression</a><br>
+      <a href="day4_Logistic_Regression_Pytorch_Breast_Cancer.ipynb">Logistic Regression with PyTorch</a><br>
+      <a href="day4_Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb">AutoEncoders</a>
+    </td>
+    <td align="center">
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day4_DCT_Compression_Numpy.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+    </td>
   </tr>
 </table>
