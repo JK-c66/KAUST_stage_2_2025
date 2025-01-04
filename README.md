@@ -24,7 +24,7 @@ Materials for KAUST stage 2 2025
       <a href="day1_Lab_Linear_Regression_Advanced.ipynb">Linear Regression Advanced</a>
     </td>
     <td align="center">
-      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Linear_Regression_Basics.ipynb"><img src="[https://colab.research.google.com/assets/colab-badge.svg](https://colab.research.google.com/assets/colab-badge.svg)"></a><br>
+      <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Linear_Regression_Basics.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a><br>
       <a href="https://colab.research.google.com/github/JK-c66/KAUST_stage_2_2025/blob/main/day1_Lab_Linear_Regression_Advanced.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
     </td>
     <td align="center">
