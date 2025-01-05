@@ -130,53 +130,83 @@
 </div>
 
 <script>
-document.getElementById('downloadAll').addEventListener('click', async () => {
-    try {
-        // Show loading state
-        const button = document.getElementById('downloadAll');
-        const originalText = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing Download...';
-        button.disabled = true;
+const DOWNLOAD_BUTTON = document.getElementById('downloadAll');
+const BASE_URL = 'https://raw.githubusercontent.com/JK-c66/KAUST_stage_2_2025/main/';
+const FILES = {
+    lectures: [
+        'Lectures/Day 1.pdf',
+        'Lectures/Day1_doctors_notes.pdf',
+        'Lectures/Day 2.pdf',
+        'Lectures/Day 3.pdf',
+        'Lectures/Day 4.pdf'
+    ],
+    labs: [
+        'Labs/day1_Hamza_Lab.ipynb',
+        'Labs/day1_Lab_Linear_Regression_Advanced.ipynb',
+        'Labs/day1_Linear_Regression_Basics.ipynb',
+        'Labs/day1_R_Squared.ipynb'
+    ],
+    solutions: [
+        'Solutions/day1_Linear_Regression_Basics_sol.ipynb',
+        'Solutions/day1_Lab_Linear_Regression_Advanced_sol.ipynb',
+        'Solutions/day1_R_Squared_sol.ipynb'
+    ]
+};
 
-        // List of files to download 
-        const files = [
-            // Lectures
-            'Lectures/Day 1.pdf',
-            'Lectures/Day1_doctors_notes.pdf',
-            'Lectures/Day 2.pdf',
-            'Lectures/Day 3.pdf',
-            'Lectures/Day 4.pdf',
-            //Labs
-            'Labs/day1_Hamza_Lab.ipynb',
-            'Labs/day1_Lab_Linear_Regression_Advanced.ipynb',
-            'Labs/day1_Linear_Regression_Basics.ipynb',
-            'Labs/day1_R_Squared.ipynb',
-            // Solutions
-            'Solutions/day1_Linear_Regression_Basics_sol.ipynb',
-            'Solutions/day1_Lab_Linear_Regression_Advanced_sol.ipynb',
-            'Solutions/day1_R_Squared_sol.ipynb'
-        ];
+async function downloadFiles(files, updateProgress) {
+    const zip = new JSZip();
+    const total = files.length;
+    let completed = 0;
 
-        // Create a JSZip instance
-        const JSZip = window.JSZip;
-        const zip = new JSZip();
-
-        // Download each file
-        const baseUrl = 'https://raw.githubusercontent.com/JK-c66/KAUST_stage_2_2025/main/';
-        for (const file of files) {
-            try {
-                const response = await fetch(baseUrl + file);
-                if (response.ok) {
-                    const blob = await response.blob();
-                    zip.file(file, blob);
-                }
-            } catch (error) {
-                console.warn(`Failed to download ${file}:`, error);
+    // Create an array of promises for parallel downloads
+    const downloadPromises = files.map(async (file) => {
+        try {
+            const response = await fetch(BASE_URL + file);
+            if (response.ok) {
+                const blob = await response.blob();
+                zip.file(file, blob);
+                completed++;
+                updateProgress(completed, total);
             }
+        } catch (error) {
+            console.warn(`Failed to download ${file}:`, error);
         }
+    });
+
+    // Wait for all downloads to complete
+    await Promise.all(downloadPromises);
+    return zip;
+}
+
+DOWNLOAD_BUTTON.addEventListener('click', async () => {
+    try {
+        // Disable button and show initial state
+        DOWNLOAD_BUTTON.disabled = true;
+        DOWNLOAD_BUTTON.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing...';
+
+        // Flatten all files into a single array
+        const allFiles = [...FILES.lectures, ...FILES.labs, ...FILES.solutions];
+
+        // Progress update function
+        const updateProgress = (completed, total) => {
+            const percentage = Math.round((completed / total) * 100);
+            DOWNLOAD_BUTTON.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span class="progress-text">Downloading... ${percentage}%</span>`;
+        };
+
+        // Download files in parallel
+        const zip = await downloadFiles(allFiles, updateProgress);
+
+        // Show generating state
+        DOWNLOAD_BUTTON.innerHTML = '<i class="fas fa-cog fa-spin"></i> Generating ZIP...';
 
         // Generate and download zip
-        const content = await zip.generateAsync({type: 'blob'});
+        const content = await zip.generateAsync({
+            type: 'blob',
+            compression: 'DEFLATE',
+            compressionOptions: { level: 5 }
+        });
+
+        // Create and trigger download
         const url = window.URL.createObjectURL(content);
         const a = document.createElement('a');
         a.href = url;
@@ -186,14 +216,14 @@ document.getElementById('downloadAll').addEventListener('click', async () => {
         window.URL.revokeObjectURL(url);
         document.body.removeChild(a);
 
-        // Restore button state
-        button.innerHTML = originalText;
-        button.disabled = false;
+        // Reset button
+        DOWNLOAD_BUTTON.innerHTML = '<i class="fas fa-download"></i> Download All Materials';
+        DOWNLOAD_BUTTON.disabled = false;
     } catch (error) {
         console.error('Download failed:', error);
         alert('Download failed. Please try again later.');
-        button.innerHTML = originalText;
-        button.disabled = false;
+        DOWNLOAD_BUTTON.innerHTML = '<i class="fas fa-download"></i> Download All Materials';
+        DOWNLOAD_BUTTON.disabled = false;
     }
 });
 </script>
