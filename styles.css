@@ -40,10 +40,10 @@ h2 {margin: 1.25rem 0 0.75rem; color: var(--text-color); font-size: 1.4rem; font
 h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: var(--text-color); border-radius: 2px;}
 .course-table {width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px var(--card-shadow); margin-bottom: 1.5rem;}
 .course-table th {background: var(--table-header-bg); padding: 0.5rem 0.75rem; font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color);}
-.course-table td {padding: 0.4rem 0.75rem; border-bottom: 1px solid var(--border-color); font-size: 1rem;}
+.course-table td {padding: 0.75rem; border-bottom: 1px solid var(--border-color); font-size: 1rem; vertical-align: top;}
 .course-table tr:last-child td {border-bottom: none;}
 .course-table tr:hover {background: var(--table-row-hover); transition: background-color 0.2s ease;}
-.lab-links, .colab-links, .solution-links {display: flex; flex-direction: column; gap: 0.35rem;}
+.lab-links, .colab-links, .solution-links {display: flex; flex-direction: column; gap: 0.25rem; padding: 0.15rem 0; min-height: 40px;}
 .lab-links a {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; transition: all 0.2s ease; padding: 0.25rem 0;}
 .lab-links a::before {content: '\f019'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 0.8em;}
 .pdf-link {display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-color); text-decoration: none; font-size: 0.95rem;}
@@ -51,7 +51,8 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
 .colab-button {
     display: inline-flex;
     align-items: center;
-    padding: 0;
+    padding: 0.25rem 0;
+    min-height: 32px;
     background-color: transparent;
     border: none;
     border-radius: 4px;
@@ -120,11 +121,23 @@ h2::after {content: ''; position: absolute; bottom: 0; left: 0; width: 60px; hei
     }
 }
 
-/* Lab separator styling */
+/* Updated lab separator styling */
 .lab-separator {
     border: 0;
-    height: 1px;
-    background-color: var(--table-border);
-    margin: 6px 0;
+    height: 2px;
+    background-color: #cbd5e1;
+    margin: 2px 0;
     width: 100%;
+    opacity: 0.8;
+}
+
+.course-table tr td {
+    padding: 0.3rem;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+/* Day separators - only the lines between days */
+.course-table tr:not(:last-child) td {
+    border-bottom: 3px solid #94a3b8;
 }
